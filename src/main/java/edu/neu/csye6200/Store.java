@@ -5,15 +5,15 @@ public class Store extends AbstractStore {
     @Override
     protected void loadItems() {
         try {
-            for (String data : FileUtil.readFile("src\\main\\java\\edu\\n" + //
+            for (String data : FileUtil.readCustomFile("src\\main\\java\\edu\\n" + //
                     "eu\\csye6200\\FoodItemCSV.txt")) {
                 items.add(FoodItemFactory.createItem(data));
             }
-            for (String data : FileUtil.readFile("src\\main\\java\\edu\\n" + //
+            for (String data : FileUtil.readCustomFile("src\\main\\java\\edu\\n" + //
                     "eu\\csye6200\\ElectronicItemCSV.txt")) {
                 items.add(ElectronicItemFactory.getInstance().createItem(data));
             }
-            for (String data : FileUtil.readFile("src\\main\\java\\edu\\n" + //
+            for (String data : FileUtil.readCustomFile("src\\main\\java\\edu\\n" + //
                     "eu\\csye6200\\ServiceItemCSV.txt")) {
                 items.add(ServiceItemFactory.getInstance().createItem(data));
             }
