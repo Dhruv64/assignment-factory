@@ -1,0 +1,4 @@
+1,Cleaning,80.0,Home
+2,Software development,500.0,Tech
+3,Laptop Repair,200.0,Tech
+4,Car puncture,100.0,Automotive
